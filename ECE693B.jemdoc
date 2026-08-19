@@ -1,0 +1,62 @@
+# jemdoc: menu{MENU}{ECE693B.html}
+= ECE693B: Information Theoretic Methods in Generative AI
+
+~~~
+{}{table}{courseinfo}
+*Meeting* | Monday \& Wednesday, 3:30 PM – 4:45 PM ||
+*Location* | KUY 207 ||
+*Semester* | August 24, 2026 – December 18, 2026 ||
+*Instructor* | [index.html Haoyue Tang] — Department of Electrical and Computer Engineering, University of Hawaiʻi at Mānoa ||
+*Email* | [mailto:haoyue@hawaii.edu haoyue@hawaii.edu] ||
+*Office Hours* | Friday 10:00–11:00 AM, POST 205E
+~~~
+
+[teaching\/IT_GenAI_Syllabus.pdf \[Course Syllabus\]]
+
+== Outline
+
+This course provides an introduction to deep generative models, the information-theoretic principles that underlie them, and their applications in image generation and feature learning. Students will study the theory and practice behind the major families of generative models — autoregressive models, variational autoencoders (VAEs), normalizing flows, flow matching, generative adversarial networks (GANs), energy-based models, and score-based\/diffusion models — and how they evolve towards today's generative AI systems. The course combines lectures, written \& coding assignments, a reading report, and a final project.
+
+=== Prerequisites
+Basic knowledge of probability and machine learning. Ability to code in PyTorch (use of AI coding assistants such as Claude or GPT is permitted).
+
+=== Grading
+- Assignments (3 × 15\%): 45\%
+- Literature Reading Report: 20\%
+- Final Project: 35\%
+
+=== Course Policies
+- *Late Work:* Late submissions will be graded at 50\% of the original score.
+- *Academic Integrity:* Students are expected to adhere to the [https://manoa.hawaii.edu/studentsuccess/conduct-code/ UH Mānoa Student Conduct Code].
+- *Accessibility (KOKUA):* Students needing accommodations should contact the [https://www.hawaii.edu/kokua/ KOKUA Program].
+
+== General References
+
+No required textbook. Readings and lecture materials will draw on publicly available resources:
+- [https://deepgenerativemodels.github.io/ Stanford CS236: Deep Generative Models] (Stefano Ermon)
+- Additional readings will be posted per lecture on Canvas.
+
+== Schedule
+
+Topic sequence follows the general arrangement of Stanford CS236. University holidays are marked below. This schedule is a draft and may be adjusted as the semester progresses.
+
+~~~
+{}{table}{schedule}
+*Week* | *Monday* | *Wednesday* | *Coursework* ||
+Week 1 | Aug 24: Introduction to Generative AI \& Course Overview | Aug 26: Basics: Machine Learning, Probability \& Information Theory | Assignment 1 (Probability) released ||
+Week 2 | Aug 31: Autoregressive Models | Sep 2: Maximum Likelihood Learning | ||
+Week 3 | *Sep 7: Holiday — Labor Day (No Class)* | Sep 9: Variational Autoencoders (VAEs) I | ||
+Week 4 | Sep 14: Variational Autoencoders (VAEs) II | Sep 16: Variational Autoencoders (VAEs) III | Assignment 1 due; Assignment 2 (VAE) released ||
+Week 5 | Sep 21: Normalizing Flows: Change of Variables \& Architectures | Sep 23: Generative Adversarial Networks (GANs) I: Foundations | ||
+Week 6 | Sep 28: GANs II: Training Dynamics | Sep 30: GANs III: Architectures \& Variants | Assignment 2 due; Assignment 3 (GAN) released ||
+Week 7 | Oct 5: GANs IV: Advanced Topics \& Applications | Oct 7: Energy-Based Models I | ||
+Week 8 | Oct 12: Energy-Based Models II | Oct 14: Energy-Based Models III | Assignment 3 due ||
+Week 9 | Oct 19: Energy-Based Models IV | Oct 21: Score-Based Models | ||
+Week 10 | Oct 26: Evaluation of Generative Models | Oct 28: Score-Based Diffusion Models I | ||
+Week 11 | Nov 2: Final Project Proposal Discussion | Nov 4: Score-Based Diffusion Models II | Final project proposal due ||
+Week 12 | Nov 9: Discrete Latent Variable Models | *Nov 11: Holiday — Veterans Day (No Class)* | ||
+Week 13 | Nov 16: Flow Matching Models I | Nov 18: Flow Matching Models II | ||
+Week 14 | Nov 23: Diffusion Models for Discrete Data | Nov 25: Reading Report Discussion | Reading report due ||
+Week 15 | Nov 30: Final Project Work Session \/ Consultations | Dec 2: Final Project Presentations I | ||
+Week 16 | Dec 7: Final Project Presentations II | Dec 9: Course Review \& Wrap-Up | Final project report due
+~~~
