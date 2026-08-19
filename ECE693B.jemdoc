@@ -1,15 +1,12 @@
 # jemdoc: menu{MENU}{ECE693B.html}
 = ECE693B: Information Theoretic Methods in Generative AI
 
-~~~
-{}{table}{courseinfo}
-*Meeting* | Monday \& Wednesday, 3:30 PM – 4:45 PM ||
-*Location* | KUY 207 ||
-*Semester* | August 24, 2026 – December 18, 2026 ||
-*Instructor* | [index.html Haoyue Tang] — Department of Electrical and Computer Engineering, University of Hawaiʻi at Mānoa ||
-*Email* | [mailto:haoyue@hawaii.edu haoyue@hawaii.edu] ||
-*Office Hours* | Friday 10:00–11:00 AM, POST 205E
-~~~
+*Meeting Days\/Time:* Monday \& Wednesday, 3:30 PM – 4:45 PM\n
+*Location:* KUY 207\n
+*Semester Dates:* August 24, 2026 – December 18, 2026\n
+*Instructor:* [index.html Haoyue Tang] — Department of Electrical and Computer Engineering, University of Hawaiʻi at Mānoa\n
+*Email:* [mailto:haoyue@hawaii.edu haoyue@hawaii.edu]\n
+*Office Hours:* Friday 10:00–11:00 AM, POST 205E
 
 [teaching\/IT_GenAI_Syllabus.pdf \[Course Syllabus\]]
 
@@ -34,7 +31,7 @@ Basic knowledge of probability and machine learning. Ability to code in PyTorch 
 
 No required textbook. Readings and lecture materials will draw on publicly available resources:
 - [https://deepgenerativemodels.github.io/ Stanford CS236: Deep Generative Models] (Stefano Ermon)
-- Additional readings will be posted per lecture on Canvas.
+- Additional readings will be posted per lecture on [https://lamaku.hawaii.edu/d2l/login Lamaku].
 
 == Schedule
 
