@@ -69,6 +69,9 @@
 </li>
 </ul>
 <h2>Efficient Long Sequence Modeling through Software-Hardware Co-Design</h2>
+<table class="imgtable"><tr><td>
+<img src="research/sequencemodeling.png" alt="sequencemodeling" width="700px" />&nbsp;</td>
+<td align="left"></td></tr></table>
 <p>Efficient long sequence modeling architecture is important for applications such as recommendation systems and drug discovery. For example, in recommendation systems, a sequence representing the past user interaction logs is first summarized into a few tokens, and then fed into the deep neural network for further user-content interaction prediction. Utilizing the attention structure for sequence modeling faces two challenges: (1) summarizing the full long behaviour sequence is GPU-memory costly; (2) over long sequences the attention weight is also over-allocated to irrelevant events, reducing the accuracy of user interest modeling. How to understand and model long sequences efficiently and accurately remains challenging.
 </p>
 <p>Our research attempts to overcome the aforementioned challenge through a semantic-aware, hierarchical sequence pruning mechanism developed jointly with the attention kernel that executes it. Unlike prior approaches that use the full sequence for modeling user interests, we propose a synergistic software-hardware co-design approach for hierarchical long sequence pruning and modeling.
