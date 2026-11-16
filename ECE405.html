@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>ECE405: Introduction to Large-Scale Artificial Intelligence Systems</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Haoyue Tang</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="bio.html">Biography</a></div>
+<div class="menu-item"><a href="CV_HaoyueTang-2.pdf">Resume</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="interests.html">Interests</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="pre.html">Presentations</a></div>
+<div class="menu-item"><a href="research.pdf">Research&nbsp;Statement</a></div>
+<div class="menu-category">Teaching</div>
+<div class="menu-item"><a href="teaching.html">Teaching&nbsp;Experiences</a></div>
+<div class="menu-item"><a href="mentor.html">Mentoring</a></div>
+<div class="menu-item"><a href="teaching.pdf">Teaching&nbsp;Statement</a></div>
+<div class="menu-item"><a href="ECE405.html" class="current">ECE405&nbsp;(Spring&nbsp;2027)</a></div>
+<div class="menu-item"><a href="ECE693B.html">ECE693B&nbsp;(Fall&nbsp;2026)</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>ECE405: Introduction to Large-Scale Artificial Intelligence Systems</h1>
+</div>
+<p><b>Meeting Days/Time:</b> Monday, Wednesday & Friday, 10:30 – 11:20 AM (CRN 57997, 3 credits)<br />
+<b>Location:</b> Holmes Hall 211<br />
+<b>Semester Dates:</b> January 11, 2027 – May 5, 2027<br />
+<b>Instructor:</b> <a href="index.html" target=&ldquo;blank&rdquo;>Haoyue Tang</a> — Department of Electrical and Computer Engineering, University of Hawaiʻi at Mānoa<br />
+<b>Email:</b> <a href="mailto:haoyue@hawaii.edu" target=&ldquo;blank&rdquo;>haoyue@hawaii.edu</a><br />
+<b>Office Hours:</b> TBA, POST 205E (and by appointment)
+</p>
+<p><a href="teaching\/ECE405_Syllabus.pdf" target=&ldquo;blank&rdquo;>[Course Syllabus]</a>
+</p>
+<h2>Outline</h2>
+<p>Language models are the core of modern AI systems. In this course, students build one from scratch. Following <a href="https://cs336.stanford.edu/" target=&ldquo;blank&rdquo;>Stanford CS336: Language Modeling from Scratch</a> and the <a href="https://igormolybog.github.io/ece405_sprg2026.html" target=&ldquo;blank&rdquo;>previous offering of ECE405</a> by Prof. Igor Molybog, we go through the full pipeline of a language model: tokenization, Transformer architecture and training, GPU systems and kernels, distributed training, scaling laws, data collection and filtering, inference, evaluation, and post-training (supervised fine-tuning, preference alignment, and reinforcement learning for reasoning). <b>Aim:</b> for students to gain the engineering ability to reproduce results from AI papers. The course is implementation-heavy: four large coding assignments run on GPU clusters.
+</p>
+<h3>Prerequisites</h3>
+<p>Linear algebra, calculus, probability & statistics, and basic machine learning. A solid coding background is required: Python, PyTorch, bash, and git.
+</p>
+<h3>Grading</h3>
+<ul>
+<li><p>Assignment 1 (Basics): 25%
+</p>
+</li>
+<li><p>Assignment 2 (Systems & Scaling): 25%
+</p>
+</li>
+<li><p>Assignment 3 (Data): 25%
+</p>
+</li>
+<li><p>Assignment 4 (Alignment & Reasoning RL): 25%
+No exams. Letter grades follow the UH Mānoa plus/minus scale (see the syllabus).
+</p>
+</li>
+</ul>
+<h3>Course Policies</h3>
+<ul>
+<li><p><b>Late Days:</b> 5 late days for the semester, at most 3 per assignment. Each late day extends a deadline by 24 hours.
+</p>
+</li>
+<li><p><b>Regrades:</b> Within 3 days after grades are released, for objective grading errors only.
+</p>
+</li>
+<li><p><b>Collaboration:</b> Study groups are allowed, but each student writes and submits their own code and write-up. List study-group members on your submission.
+</p>
+</li>
+<li><p><b>AI Tools:</b> LLMs may be used for low-level programming questions and high-level conceptual questions, but not to solve assignment problems directly. Please turn off AI autocomplete in your IDE. Do not consult third-party implementations unless a handout says so.
+</p>
+</li>
+<li><p><b>Academic Integrity:</b> Students are expected to adhere to the <a href="https://manoa.hawaii.edu/studentsuccess/conduct-code/" target=&ldquo;blank&rdquo;>UH Mānoa Student Conduct Code</a>.
+</p>
+</li>
+<li><p><b>Accessibility (KOKUA):</b> Students needing accommodations should contact the <a href="https://www.hawaii.edu/kokua/" target=&ldquo;blank&rdquo;>KOKUA Program</a>.
+</p>
+</li>
+</ul>
+<h2>Assignments</h2>
+<p>Assignments are adapted from the <a href="https://cs336.stanford.edu/" target=&ldquo;blank&rdquo;>Stanford CS336</a> handouts and due Fridays at 11:59 PM HST unless noted. Submit on <a href="https://lamaku.hawaii.edu/d2l/login" target=&ldquo;blank&rdquo;>Lamaku</a>.
+</p>
+<table id="assignments">
+<tr class="r1"><td class="c1"><b>Assignment</b> </td><td class="c2"> <b>Topic</b> </td><td class="c3"> <b>Released</b> </td><td class="c4"> <b>Due</b> </td></tr>
+<tr class="r2"><td class="c1">A1: Basics </td><td class="c2"> BPE tokenizer, Transformer LM, AdamW; train on TinyStories / OpenWebText </td><td class="c3"> Jan 11 </td><td class="c4"> Feb 12 </td></tr>
+<tr class="r3"><td class="c1">A2: Systems & Scaling </td><td class="c2"> Profiling, FlashAttention-2 in Triton, distributed data-parallel training, scaling laws </td><td class="c3"> Feb 12 </td><td class="c4"> Mar 12 </td></tr>
+<tr class="r4"><td class="c1">A3: Data </td><td class="c2"> Common Crawl to pretraining data: extraction, filtering, deduplication </td><td class="c3"> Mar 12 </td><td class="c4"> Apr 9 </td></tr>
+<tr class="r5"><td class="c1">A4: Alignment & Reasoning RL </td><td class="c2"> SFT, expert iteration, GRPO for math reasoning; optional DPO </td><td class="c3"> Apr 9 </td><td class="c4"> May 5 (Wed)
+</td></tr></table>
+<h3>Compute</h3>
+<p>Assignments need GPUs. Onboarding is in Weeks 1–2. Debug on CPU first and start early, because queues are long right before deadlines.
+</p>
+<h2>General References</h2>
+<p>No required textbook. Lectures draw on publicly available resources:
+</p>
+<ul>
+<li><p><a href="https://cs336.stanford.edu/" target=&ldquo;blank&rdquo;>Stanford CS336: Language Modeling from Scratch</a> (Tatsunori Hashimoto & Percy Liang)
+</p>
+</li>
+<li><p><a href="https://igormolybog.github.io/ece405_sprg2026.html" target=&ldquo;blank&rdquo;>ECE405, Spring 2026</a> (Igor Molybog)
+</p>
+</li>
+<li><p><a href="https://www.deeplearningbook.org" target=&ldquo;blank&rdquo;>Deep Learning</a> (Goodfellow, Bengio & Courville); <a href="https://d2l.ai" target=&ldquo;blank&rdquo;>Dive into Deep Learning</a>
+</p>
+</li>
+<li><p><a href="https://huggingface.co/papers" target=&ldquo;blank&rdquo;>Hugging Face Daily Papers</a>
+</p>
+</li>
+<li><p>Slides, readings, and recordings will be posted on <a href="https://lamaku.hawaii.edu/d2l/login" target=&ldquo;blank&rdquo;>Lamaku</a>.
+</p>
+</li>
+</ul>
+<h2>Schedule</h2>
+<p>University holidays are marked below. This schedule is a draft and may be adjusted as the semester progresses.
+</p>
+<table id="schedule">
+<tr class="r1"><td class="c1"><b>Week</b> </td><td class="c2"> <b>Dates</b> </td><td class="c3"> <b>Topics</b> </td><td class="c4"> <b>Coursework</b> </td></tr>
+<tr class="r2"><td class="c1">Week 1 </td><td class="c2"> Jan 11 – 15 </td><td class="c3"> Course overview; language modeling; tokenization (byte-pair encoding) </td><td class="c4"> A1 (Basics) released; Koa onboarding </td></tr>
+<tr class="r3"><td class="c1">Week 2 </td><td class="c2"> Jan 18 – 22 </td><td class="c3"> PyTorch tensors, einops; resource accounting (FLOPs, memory). <b>Jan 18: MLK Day (No Class)</b> </td><td class="c4"> </td></tr>
+<tr class="r4"><td class="c1">Week 3 </td><td class="c2"> Jan 25 – 29 </td><td class="c3"> Transformer architecture & hyperparameters </td><td class="c4"> </td></tr>
+<tr class="r5"><td class="c1">Week 4 </td><td class="c2"> Feb 1 – 5 </td><td class="c3"> Attention alternatives; mixture of experts </td><td class="c4"> </td></tr>
+<tr class="r6"><td class="c1">Week 5 </td><td class="c2"> Feb 8 – 12 </td><td class="c3"> GPUs & TPUs; memory hierarchy; benchmarking & profiling </td><td class="c4"> A1 due Fri Feb 12; A2 (Systems & Scaling) released </td></tr>
+<tr class="r7"><td class="c1">Week 6 </td><td class="c2"> Feb 15 – 19 </td><td class="c3"> Kernels & Triton; FlashAttention. <b>Feb 15: Presidents&rsquo; Day (No Class)</b> </td><td class="c4"> </td></tr>
+<tr class="r8"><td class="c1">Week 7 </td><td class="c2"> Feb 22 – 26 </td><td class="c3"> Parallelism I: data parallelism, ZeRO / FSDP </td><td class="c4"> </td></tr>
+<tr class="r9"><td class="c1">Week 8 </td><td class="c2"> Mar 1 – 5 </td><td class="c3"> Parallelism II: tensor, pipeline, sequence / context parallelism </td><td class="c4"> </td></tr>
+<tr class="r10"><td class="c1">Week 9 </td><td class="c2"> Mar 8 – 12 </td><td class="c3"> Scaling laws (Chinchilla, compute-optimal training, muP) </td><td class="c4"> A2 due Fri Mar 12; A3 (Data) released </td></tr>
+<tr class="r11"><td class="c1">— </td><td class="c2"> <b>Mar 15 – 19</b> </td><td class="c3"> <b>Spring Recess (No Class)</b> </td><td class="c4"> </td></tr>
+<tr class="r12"><td class="c1">Week 10 </td><td class="c2"> Mar 22 – 26 </td><td class="c3"> Data I: sources, Common Crawl, text extraction. <b>Mar 26: Kūhiō Day / Good Friday (No Class)</b> </td><td class="c4"> </td></tr>
+<tr class="r13"><td class="c1">Week 11 </td><td class="c2"> Mar 29 – Apr 2 </td><td class="c3"> Data II: quality filtering, deduplication, data mixing, synthetic data </td><td class="c4"> </td></tr>
+<tr class="r14"><td class="c1">Week 12 </td><td class="c2"> Apr 5 – 9 </td><td class="c3"> Post-training I: supervised fine-tuning; RLHF; preference optimization (PPO, DPO) </td><td class="c4"> A3 due Fri Apr 9; A4 (Alignment & Reasoning RL) released </td></tr>
+<tr class="r15"><td class="c1">Week 13 </td><td class="c2"> Apr 12 – 16 </td><td class="c3"> Post-training II: RL with verifiable rewards (GRPO); reasoning models </td><td class="c4"> </td></tr>
+<tr class="r16"><td class="c1">Week 14 </td><td class="c2"> Apr 19 – 23 </td><td class="c3"> Inference: KV caching, quantization, speculative decoding, serving (vLLM) </td><td class="c4"> </td></tr>
+<tr class="r17"><td class="c1">Week 15 </td><td class="c2"> Apr 26 – 30 </td><td class="c3"> Evaluation: benchmarks & metrics; agents and tool use </td><td class="c4"> </td></tr>
+<tr class="r18"><td class="c1">Week 16 </td><td class="c2"> May 3 – 5 </td><td class="c3"> Alignment & multimodality; course wrap-up </td><td class="c4"> A4 due Wed May 5
+</td></tr></table>
+<div id="footer">
+<div id="footer-text">
+Page generated 2026-11-16 12:12:59 HST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
